@@ -37,8 +37,13 @@ Les séquences de tokens sont projettées dans un espace latent dense de dimensi
 
  _<sub>Architecture du modèle texte</sub>_ 
 
+
+
+
+ _<sub>Performances après un entrainement sur l'intégralité du jeu de données images</sub>_ 
+
 ## Modèle pour le traitement de l'image seule
-Pour ce modèle, les photos des articles sont pris en considération.  
+Pour ce modèle, seules les photos des articles sont prises en considération.  
 
 Dans un premier temps, un jeu données réduit est utilisé (30% du jeu initial en gardant la même distibution intra-classes) pour sélectionner les modèles les plus intéressants.
 
@@ -46,13 +51,13 @@ Dans un premier temps, un jeu données réduit est utilisé (30% du jeu initial 
 
  _<sub>Performances des modèles sur un jeu de données réduit</sub>_ 
 
-Le modèle retenu est construit sur la base d'un modèle "Xception" pré entraîné avec les 26 dernières couches dégelées.  
-Bien que l’accuracy obtebue soit un peu moindre que pour un modèle ayant une base "EfficientNetB5", avec "Xception" il est possible de sauvegarder intégralement le modèle au format .joblib, contrairement au modèle de la série EfficientNet.  
-C'est une limitaiton connue intrinsèque à Tensorflow 2+.
-Le rappel d’un modèle entraîné au format .joblib est bien plus simple et plus rapide à mettre en œuvre pour les prédictions.
+Le modèle retenu est construit sur la base d'un modèle "Xception" pré-entraîné avec les 26 dernières couches dégelées.  
+Bien que l’accuracy obtenue soit un peu moindre que pour un modèle ayant une base "EfficientNetB5", avec "Xception" il est possible de sauvegarder intégralement le modèle au format _.joblib_, contrairement au modèle de la série EfficientNet (c'est une limitaiton intrinsèque à Tensorflow 2+). Le rappel d’un modèle entraîné au format _.joblib_ est bien plus simple et plus rapide à mettre en œuvre pour les prédictions.
 
-
+<img width="350" alt="model_51" src="https://github.com/JTh34/data-science/assets/79744432/4e4af3c1-be34-432c-9656-e0187ef58aed"> 
 
 _<sub>Architecture du modèle image</sub>_ 
+
+
 
  _<sub>Performances après un entrainement sur l'intégralité du jeu de données images</sub>_ 
