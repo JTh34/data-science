@@ -104,4 +104,3 @@ L'accuracy de référence pour le modèle traitant le texte seul et celle du mod
 
 <img width="950" alt="Predictions_Models5" src="https://github.com/JTh34/data-science/assets/79744432/551218cb-0582-429d-b6e8-372e74f69fd1"> 
 
-<img width="950" alt="Predictions_Models6" src="https://github.com/JTh34/data-science/assets/79744432/c9f018777-3af8-4092-8cde-760cbec42516">
