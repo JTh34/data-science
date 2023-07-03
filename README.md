@@ -37,10 +37,11 @@ Les séquences de tokens sont projettées dans un espace latent dense de dimensi
 
  _<sub>Architecture du modèle texte</sub>_ 
 
+<img width="300" alt="F1_texte" src="https://github.com/JTh34/data-science/assets/79744432/9969efaa-5573-4928-945d-283f337f9b53"> 
 
+<img width="550" alt="Classes_dispatch_texte" src="https://github.com/JTh34/data-science/assets/79744432/75f67265-2b3d-4721-82be-40406aa20318">  
 
-
- _<sub>Performances après un entrainement sur l'intégralité du jeu de données images</sub>_ 
+ _<sub>Performances du modèle texte, après entrainement sur l'intégralité du jeu de données</sub>_ 
 
 ## Modèle pour le traitement de l'image seule
 Pour ce modèle, seules les photos des articles sont prises en considération.  
@@ -58,6 +59,28 @@ Bien que l’accuracy obtenue soit un peu moindre que pour un modèle ayant une 
 
 _<sub>Architecture du modèle image</sub>_ 
 
+<img width="300" alt="F1_image_fulldata" src="https://github.com/JTh34/data-science/assets/79744432/19707f3a-4ac7-40e0-b221-7ca0b33eeee5"> 
+
+<img width="550" alt="Classes_dispatch_image" src="https://github.com/JTh34/data-science/assets/79744432/919dfe33-623e-40af-8eee-1fc24977528a">  
+
+ _<sub>Performances du modèle image, après entrainement sur l'intégralité du jeu de données</sub>_ 
+
+## Modèle pour le traitement du texte et de l'image simultanément
+Pour ce modèle, le principe est de tirer partie des 2 meilleurs modèles précédents en concaténant leurs architectures.
+Le modèle ainsi obtenu devrait avoir des performances bien meilleures que chaque modèle isolé puisqu'il prend en compte plus de carctéristiques des données d'entrées.
+
+<img width="450" alt="model_201" src="https://github.com/JTh34/data-science/assets/79744432/e01871de-a878-4e80-88af-df515924da4a"> 
+
+_<sub>Architecture du modèle traitant l'image et le texte simultanément</sub>_ 
+
+<img width="300" alt="F1_texte+image_full_data" src="https://github.com/JTh34/data-science/assets/79744432/880608b4-866c-49c1-934d-29d0691c6a13"> 
+
+<img width="550" alt="Classes_dispatch_texte+image" src="https://github.com/JTh34/data-science/assets/79744432/55813107-e946-42a9-87e8-8cf56e41a913">  
+
+ _<sub>Performances du modèle texte+image, après entrainement sur l'intégralité du jeu de données</sub>_ 
 
 
- _<sub>Performances après un entrainement sur l'intégralité du jeu de données images</sub>_ 
+## Analyse des résultats
+<img width="650" alt="F1_regroupe_2" src="https://github.com/JTh34/data-science/assets/79744432/cbdb0f00-dbf8-4646-b0b3-c87d815b0ea3"> 
+
+ _<sub>Comparaison des F1-score de chaque modèle pour chaque catégorie</sub>_ 
