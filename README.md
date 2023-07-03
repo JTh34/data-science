@@ -93,10 +93,16 @@ Concernant le défi, les scores de benchmarks ont été largement dépassés.
 L'accuracy de référence pour le modèle traitant le texte seul et celle du modèle ne taitant que l'image étaient de **0.81** et **0.55**. Les modèles proposés permettent d'atteindre des accuracy, respectivement, de **0.91** et **0.62**.
 
 
-## Quelques prédictions des 3 modèles
+## Quelques prédictions des modèles chosies au hasard 
 
+<img width="950" alt="Predictions_Models1" src="https://github.com/JTh34/data-science/assets/79744432/c1760699-efe9-4140-8aa1-c1a6e560b0ab"> 
 
-<img width="650" alt="F1_regroupe_2" src="https://github.com/JTh34/data-science/assets/79744432/cbdb0f00-dbf8-4646-b0b3-c87d815b0ea3"> 
+<img width="950" alt="Predictions_Models9" src="https://github.com/JTh34/data-science/assets/79744432/506c2144-2788-47b4-8af9-9a578d3913d0"> 
 
- _<sub>Comparaison des F1-score de chaque modèle pour chaque catégorie</sub>_ 
+<img width="950" alt="Predictions_Models3" src="https://github.com/JTh34/data-science/assets/79744432/45f1cdf4-1cb7-44f6-8701-0101ad73514a"> 
 
+<img width="950" alt="Predictions_Models11" src="https://github.com/JTh34/data-science/assets/79744432/df57ba62-4089-48b2-8de6-217f4b075ccd"> 
+
+<img width="950" alt="Predictions_Models5" src="https://github.com/JTh34/data-science/assets/79744432/551218cb-0582-429d-b6e8-372e74f69fd1"> 
+
+<img width="950" alt="Predictions_Models6" src="https://github.com/JTh34/data-science/assets/79744432/c9f018777-3af8-4092-8cde-760cbec42516">
