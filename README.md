@@ -1,7 +1,6 @@
-# Défi data Rakuten France  
-Le défi consiste à proposer des modèles de Machine Learning capables de réaliser une classification mutli-classes avec des entrées multi-modales (texte et image) permettant de prédire correctement le code produit pour des articles de vente en ligne.  
-L'enjeu est d'améliorer le référencement des articles grâce à des modèle de ML qui permettent d'augmenter significativement les scores des modèles de références.  
-(https://challengedata.ens.fr/challenges/35)
+# Défi Data - Rakuten France  
+Ce défi data consiste à proposer des modèles de Machine Learning capables de réaliser une classification mutli-classes avec des entrées multi-modales (texte et image) permettant de prédire correctement le code produit pour des articles de vente en ligne.  
+L'enjeu est d'améliorer le référencement des articles grâce à des modèle de ML qui permettent d'augmenter significativement les scores des modèles de références (https://challengedata.ens.fr/challenges/35).
 
 
 ## Analyse du jeu de données
@@ -85,15 +84,15 @@ _<sub>Architecture du modèle traitant l'image et le texte simultanément</sub>_
 
  _<sub>Comparaison des F1-score de chaque modèle pour chaque catégorie</sub>_ 
 
-Le modèle qui traite uniquement les images est beaucoup moins performant que ceux qui traitent le texte. 
+Le modèle qui traite uniquement les images est beaucoup moins performant que ceux qui traitent le texte.  
 Le modèle "texte+image" donne globalement de meilleurs résultats que les 2 autres.  
-Cependant, le modèle qui traite texte seul est très performant. Au regard de la complexité de la mise en oeuvre et du coût en calculs pour les modèles traitant l'images, c'est assez remarquable.  
+Cependant, le modèle qui traite le texte seul est très performant. Au regard de la complexité de la mise en oeuvre et du coût en calculs pour les modèles traitant les images, c'est assez remarquable.  
 
-Concernant le défi, les scores de benchmarks ont été largement dépassés.  
+Concernant le défi, les scores de benchmark ont été notablement dépassés.  
 L'accuracy de référence pour le modèle traitant le texte seul et celle du modèle ne taitant que l'image étaient de **0.81** et **0.55**. Les modèles proposés permettent d'atteindre des accuracy, respectivement, de **0.91** et **0.62**.
 
 
-## Quelques prédictions des modèles chosies au hasard 
+## Quelques prédictions choisies au hasard 
 
 <img width="950" alt="Predictions_Models1" src="https://github.com/JTh34/data-science/assets/79744432/c1760699-efe9-4140-8aa1-c1a6e560b0ab"> 
 
