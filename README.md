@@ -59,7 +59,8 @@ Pour ce modèle, seules les photos des articles sont prises en considération. D
 
 <div align="justify">
 Le modèle retenu est construit sur la base d'un modèle "Xception" pré-entraîné dont les 26 dernières couches ont été dégelées.  
-Bien que l’accuracy obtenue soit un peu moindre que celle obtenue avec un modèle ayant une base "EfficientNetB5", avec "Xception" il est possible de sauvegarder intégralement le modèle au format <i>.joblib</i>, contrairement au modèle de la série EfficientNet (c'est une limitaiton intrinsèque à Tensorflow 2+). Le rappel d’un modèle entraîné au format <i>.joblib</i> est bien plus simple et plus rapide à mettre en œuvre pour les prédictions.
+Bien que l’accuracy obtenue soit un peu moindre que celle obtenue avec un modèle ayant une base "EfficientNetB5", avec "Xception" il est possible de sauvegarder intégralement le modèle au format <i>.joblib</i>, contrairement au modèle de la série EfficientNet (c'est une limitaiton intrinsèque à Tensorflow 2+).
+Le rappel d’un modèle entraîné au format <i>.joblib</i> est bien plus simple et plus rapide à mettre en œuvre pour les prédictions.
 </div>
 
 <img width="350" alt="model_51" src="https://github.com/JTh34/data-science/assets/79744432/4e4af3c1-be34-432c-9656-e0187ef58aed"> 
@@ -73,9 +74,10 @@ _<sub>Architecture du modèle image</sub>_
  _<sub>Performances du modèle image, après entrainement sur l'intégralité du jeu de données</sub>_ 
 
 ## Modèle pour le traitement du texte et de l'image simultanément
-Pour ce modèle, le principe est de tirer partie des 2 meilleurs modèles précédents en concaténant leurs architectures.
-Le modèle ainsi obtenu devrait avoir des performances bien meilleures que chaque modèle isolé puisqu'il prend en compte plus de carctéristiques des données d'entrées.
-
+<div align="justify">
+Pour ce modèle, le principe est de tirer parti des deux meilleurs modèles précédents en concaténant leurs architectures.
+Le modèle ainsi obtenu devrait avoir des performances bien meilleures que chaque modèle isolé puisqu'il prend en compte plus de caractéristiques des données d'entrées.
+</div>
 <img width="450" alt="model_201" src="https://github.com/JTh34/data-science/assets/79744432/e01871de-a878-4e80-88af-df515924da4a"> 
 
 _<sub>Architecture du modèle traitant l'image et le texte simultanément</sub>_ 
@@ -92,18 +94,18 @@ _<sub>Architecture du modèle traitant l'image et le texte simultanément</sub>_
 
  _<sub>Comparaison des F1-score de chaque modèle pour chaque catégorie</sub>_ 
 
+<div align="justify">
 Le modèle qui traite uniquement les images est beaucoup moins performant que ceux qui traitent le texte.  
-Le modèle "texte+image" donne globalement de meilleurs résultats que les 2 autres.  
-Cependant, le modèle qui traite le texte seul est très performant. Au regard de la complexité de la mise en oeuvre et du coût en calculs pour les modèles traitant les images, c'est assez remarquable.  
-
-Concernant le défi, les scores de benchmark ont été notablement dépassés.  
-L'accuracy de référence pour le modèle traitant le texte seul et celle du modèle ne taitant que l'image étaient de **0.81** et **0.55**. Les modèles proposés permettent d'atteindre des accuracy, respectivement, de **0.91** et **0.62**.
-
+Le modèle "texte+image" donne globalement de meilleurs résultats que les deux autres.  
+Cependant, le modèle qui traite le texte seul est très performant. Au regard de la complexité de la mise en oeuvre et du coût en calculs pour les modèles traitant les images, c'est assez remarquable.
+<br></br>
+Concernant le défi data, les scores de benchmark ont été notablement dépassés. L'accuracy de référence pour le modèle traitant le texte seul et celle du modèle ne taitant que l'image étaient de **0.81** et **0.55**. Les modèles proposés permettent d'atteindre des accuracy, respectivement, de **0.91** et **0.62**.
+</div>
 
 ## Quelques prédictions choisies au hasard 
 
 <img width="950" alt="Predictions_Models1" src="https://github.com/JTh34/data-science/assets/79744432/c1760699-efe9-4140-8aa1-c1a6e560b0ab"> 
-
+<!-- -->
 <img width="950" alt="Predictions_Models9" src="https://github.com/JTh34/data-science/assets/79744432/506c2144-2788-47b4-8af9-9a578d3913d0"> 
 
 <img width="950" alt="Predictions_Models3" src="https://github.com/JTh34/data-science/assets/79744432/45f1cdf4-1cb7-44f6-8701-0101ad73514a"> 
